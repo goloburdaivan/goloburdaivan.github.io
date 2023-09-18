@@ -29,7 +29,6 @@ a:link {
 nav {
     display: block;
     width: 100%;
-    height: 2%;
     padding: 50px;
     padding-left: 0px;
     padding-right: 0px;
@@ -56,7 +55,7 @@ footer {
 
 .wrapper {
     display: flex;
-    width: 60%;
+    width: 80%;
     height: 80%;
     flex-wrap: wrap;
 }
@@ -68,10 +67,14 @@ footer {
 
 .block-1 {
     overflow: scroll;
-    width: 40%;
+    width: 20%;
     height: 100%;
     color: white;
     background-color: black;
+}
+
+.block-1 ul {
+    word-wrap: break-word;
 }
 
 .block-2::-webkit-scrollbar {
@@ -80,7 +83,7 @@ footer {
 
 .block-2 {
     overflow: scroll;
-    width: 60%;
+    width: 80%;
     background-color: red;
     height: 100%;
 }
@@ -92,7 +95,7 @@ footer {
 
 .block-3 {
     overflow: scroll;
-    width: 40%;
+    width: 20%;
     height: 100%;
     text-wrap: wrap;
     background-color: black;
