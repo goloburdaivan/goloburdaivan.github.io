@@ -68,7 +68,7 @@ footer {
 
 .block-1 {
     overflow: scroll;
-    width: 30%;
+    width: 40%;
     height: 100%;
     color: white;
     background-color: black;
@@ -80,7 +80,7 @@ footer {
 
 .block-2 {
     overflow: scroll;
-    width: 70%;
+    width: 60%;
     background-color: red;
     height: 100%;
 }
