@@ -8,6 +8,7 @@ main {
 }
 
 body {
+    margin: 0;
     color: white;
     height: 100%;
 }
