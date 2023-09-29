@@ -25,10 +25,13 @@ a:link {
     color: white;
 }
 
+header {
+    height: auto;
+}
+
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
     width: 100%;
     padding: 50px;
     padding-left: 0px;
@@ -38,16 +41,16 @@ nav {
 }
 
 .right-side {
+    text-align: right;
     padding: 0px;
     padding-right: 40px;
 }
 
 footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
     width: 100%;
-    height: 30%;
+    height: auto;
     padding: 50px;
     padding-left: 0px;
     padding-right: 0px;
