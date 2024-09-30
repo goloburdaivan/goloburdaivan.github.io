@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Layout</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-size: 36px;
+            font-weight: bolder;
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+        }
+
+        .top-row {
+            display: flex;
+            height: 70%;
+            width: 100%;
+        }
+
+        .img-left {
+            flex: 0 0 20%; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(70, 130, 180, 0.5);
+        }
+
+        .text-right {
+            flex: 0 0 80%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(135, 206, 235, 0.5);
+        }
+
+        .img-bottom {
+            height: 15%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(30, 144, 255, 0.7);
+        }
+
+        .text-bottom {
+            height: 15%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(255, 255, 224, 0.7);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="top-row">
+        <div class="img-left">
+            <div class="centered-text">
+                Img.
+            </div>
+        </div>
+        <div class="text-right">
+            <div> 
+                Text.
+            </div>
+        </div>
+    </div>
+    <div class="img-bottom">Img.</div>
+    <div class="text-bottom">Text</div>
+</div>
+
+</body>
+</html>
