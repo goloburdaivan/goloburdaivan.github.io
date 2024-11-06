@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Lab 1, Голобурда І. С, ІП-23">
+    <meta name="description" content="Лабораторна робота №1">
+    <title>Валідація форми</title>
+    <style>
+        .error {
+            border: 2px solid red;
+        }
+        .success {
+            color: green;
+            font-weight: bold;
+        }
+        #table {
+            margin-top: 10px;
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+
+        #table td, #table th {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+    </style>
+    </style>
+</head>
+<body>
+
+<h2>Форма для введення даних</h2>
+
+<form id="myForm">
+    <label for="fullName">ПІБ:</label>
+    <input type="text" id="fullName" name="fullName" placeholder="ТТТТТТ Т.Т." required><br><br>
+
+    <label for="idCard">ID-картка:</label>
+    <input type="text" id="idCard" name="idCard" placeholder="ТТ №ЧЧЧЧЧЧ" required><br><br>
+
+    <label for="faculty">Факультет:</label>
+    <input type="text" id="faculty" name="faculty" placeholder="ТТТТ" required><br><br>
+
+    <label for="dob">Дата народження:</label>
+    <input type="text" id="dob" name="dob" placeholder="ЧЧ.ЧЧ.ЧЧЧЧ" required><br><br>
+
+    <label for="address">Адреса:</label>
+    <input type="text" id="address" name="address" placeholder="м. ТТТТ" required><br><br>
+
+    <button type="submit">Надіслати</button>
+</form>
+
+<div id="result" class="success"></div>
+
+<input type="color" id="color-picker" value="#ff0000">
+<table id="table">
+</table>
+
+<script src="validation.js"></script>
+<script src="table.js"></script>
+</body>
+</html>
